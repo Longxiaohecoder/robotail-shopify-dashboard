@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 2,
+  "realData": true,
+  "generatedAt": "2026-10-26T09:48:09.312Z",
+  "shopInfo": {
+    "name": "Robotail",
+    "domain": "robotailpets.com",
+    "currency": "USD",
+    "timezone": "America/Chicago"
+  },
+  "period": {
+    "start": "2026-09-26T09:47:56.407Z",
+    "end": "2026-10-26T09:47:56.407Z",
+    "timezone": "America/Chicago",
+    "label": "最近30天滚动窗口"
+  },
+  "comparison": {
+    "start": "2026-08-27T09:47:56.407Z",
+    "end": "2026-09-26T09:47:56.407Z",
+    "complete": false,
+    "reason": "未授予 read_all_orders，前30天基线可能受60天历史权限边界影响，暂不显示环比",
+    "summary": null
+  },
+  "analytics": {
+    "summary": {
+      "totalOrders": 86,
+      "validOrders": 81,
+      "cancelledOrders": 5,
+      "orderAmount": 7224.51,
+      "averageOrderValue": 89.19,
+      "paidOrders": 81,
+      "fulfilledOrders": 73,
+      "unfulfilledOrders": 8,
+      "fulfillmentRate": 90.12
+    },
+    "trends": {
+      "dates": [
+        "2026-09-26",
+        "2026-09-27",
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30",
+        "2026-10-01",
+        "2026-10-02",
+        "2026-10-03",
+        "2026-10-04",
+        "2026-10-05",
+        "2026-10-06",
+        "2026-10-07",
+        "2026-10-08",
+        "2026-10-09",
+        "2026-10-10",
+        "2026-10-11",
+        "2026-10-12",
+        "2026-10-13",
+        "2026-10-14",
+        "2026-10-15",
+        "2026-10-16",
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24",
+        "2026-10-25",
+        "2026-10-26"
+      ],
+      "orders": [
+        2,
+        4,
+        5,
+        2,
+        1,
+        2,
+        3,
+        4,
+        3,
+        3,
+        4,
+        4,
+        5,
+        2,
+        2,
+        8,
+        2,
+        0,
+        1,
+        1,
+        3,
+        2,
+        5,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        1,
+        0
+      ],
+      "amount": [
+        26.48,
+        552.92,
+        798.68,
+        55.59,
+        127.5,
+        48.98,
+        217.43,
+        209.25,
+        66.69,
+        291.99,
+        447.24,
+        349.33,
+        600.23,
+        161.81,
+        61.98,
+        522.61,
+        66.98,
+        0,
+        19.73,
+        286.13,
+        185.96,
+        103.59,
+        236.43,
+        416.55,
+        54.73,
+        104.96,
+        99.21,
+        717.97,
+        366.82,
+        26.74,
+        0
+      ]
+    },
+    "topProducts": [
+      {
+        "name": "UBPet C20 Litter Box Anti-Slip Stabilizing Base",
+        "quantity": 27,
+        "amount": 486.08
+      },
+      {
+        "name": "EZSKUUP Non-Stick Cassava Cat Litter (9lb) - Robotail Compatible",
+        "quantity": 16,
+        "amount": 591.84
+      },
+      {
+        "name": "60-Pack Cat Litter Bags for Robotail C32/C42 Automatic Litter Boxes",
+        "quantity": 15,
+        "amount": 330.86
+      },
+      {
+        "name": "UBPet Robotail F20 Automatic Smart Pet Feeder for Cats & Dogs",
+        "quantity": 15,
+        "amount": 2477.28
+      },
+      {
+        "name": "Robotail F20 Automatic Wet Cat Feeder Silicone Food Tray",
+        "quantity": 7,
+        "amount": 212.86
+      },
+      {
+        "name": "C42 Robotail Smart Cat Litter Box Small Hole Filter Accessory",
+        "quantity": 7,
+        "amount": 140.66
+      },
+      {
+        "name": "Robotail Litter Box Deodorizer Blocks",
+        "quantity": 6,
+        "amount": 125.6
+      },
+      {
+        "name": "UBPet C20 Smart Automatic Cat Litter Box Guard",
+        "quantity": 6,
+        "amount": 101.37
+      },
+      {
+        "name": "Robotail Open-Top Cat Litter Box C32 Side Cover",
+        "quantity": 5,
+        "amount": 149.95
+      },
+      {
+        "name": "Robotail C42 Smart Cat Litter Box",
+        "quantity": 4,
+        "amount": 1670.23
+      }
+    ]
+  },
+  "products": {
+    "total": 44,
+    "published": 39
+  },
+  "traffic": {
+    "status": "connected",
+    "source": "GA4 Data API · 全渠道",
+    "executedAt": "2026-10-26T09:48:09.311Z",
+    "period": {
+      "start": "2026-09-26",
+      "end": "2026-10-25",
+      "timezone": "America/Chicago"
+    },
+    "summary": {
+      "sessions": 1142,
+      "totalUsers": 806,
+      "ecommercePurchases": 25,
+      "addToCarts": 86,
+      "checkouts": 46,
+      "purchaseSessionRate": 2.189141856392294
+    },
+    "rateReason": null,
+    "daily": [
+      {
+        "date": "2026-10-13",
+        "sessions": 93,
+        "totalUsers": 73,
+        "ecommercePurchases": 0,
+        "addToCarts": 3,
+        "checkouts": 1
+      },
+      {
+        "date": "2026-10-14",
+        "sessions": 72,
+        "totalUsers": 60,
+        "ecommercePurchases": 1,
+        "addToCarts": 3,
+        "checkouts": 1
+      },
+      {
+        "date": "2026-10-15",
+        "sessions": 106,
+        "totalUsers": 92,
+        "ecommercePurchases": 0,
+        "addToCarts": 4,
+        "checkouts": 3
+      },
+      {
+        "date": "2026-10-16",
+        "sessions": 93,
+        "totalUsers": 76,
+        "ecommercePurchases": 3,
+        "addToCarts": 7,
+        "checkouts": 8
+      },
+      {
+        "date": "2026-10-17",
+        "sessions": 97,
+        "totalUsers": 83,
+        "ecommercePurchases": 1,
+        "addToCarts": 15,
+        "checkouts": 7
+      },
+      {
+        "date": "2026-10-18",
+        "sessions": 93,
+        "totalUsers": 77,
+        "ecommercePurchases": 4,
+        "addToCarts": 6,
+        "checkouts": 4
+      },
+      {
+        "date": "2026-10-19",
+        "sessions": 98,
+        "totalUsers": 86,
+        "ecommercePurchases": 3,
+        "addToCarts": 3,
+        "checkouts": 4
+      },
+      {
+        "date": "2026-10-20",
+        "sessions": 105,
+        "totalUsers": 87,
+        "ecommercePurchases": 1,
+        "addToCarts": 17,
+        "checkouts": 0
+      },
+      {
+        "date": "2026-10-21",
+        "sessions": 64,
+        "totalUsers": 52,
+        "ecommercePurchases": 3,
+        "addToCarts": 4,
+        "checkouts": 1
+      },
+      {
+        "date": "2026-10-22",
+        "sessions": 74,
+        "totalUsers": 63,
+        "ecommercePurchases": 2,
+        "addToCarts": 2,
+        "checkouts": 1
+      },
+      {
+        "date": "2026-10-23",
+        "sessions": 86,
+        "totalUsers": 79,
+        "ecommercePurchases": 3,
+        "addToCarts": 4,
+        "checkouts": 6
+      },
+      {
+        "date": "2026-10-24",
+        "sessions": 79,
+        "totalUsers": 66,
+        "ecommercePurchases": 3,
+        "addToCarts": 8,
+        "checkouts": 4
+      },
+      {
+        "date": "2026-10-25",
+        "sessions": 84,
+        "totalUsers": 77,
+        "ecommercePurchases": 1,
+        "addToCarts": 10,
+        "checkouts": 6
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "sessions": 610,
+        "totalUsers": 466,
+        "ecommercePurchases": 7,
+        "addToCarts": 24,
+        "checkouts": 20
+      },
+      {
+        "channel": "Organic Search",
+        "sessions": 474,
+        "totalUsers": 315,
+        "ecommercePurchases": 15,
+        "addToCarts": 38,
+        "checkouts": 25
+      },
+      {
+        "channel": "Referral",
+        "sessions": 21,
+        "totalUsers": 15,
+        "ecommercePurchases": 3,
+        "addToCarts": 23,
+        "checkouts": 0
+      },
+      {
+        "channel": "Unassigned",
+        "sessions": 19,
+        "totalUsers": 19,
+        "ecommercePurchases": 0,
+        "addToCarts": 1,
+        "checkouts": 1
+      },
+      {
+        "channel": "AI Assistant",
+        "sessions": 14,
+        "totalUsers": 14,
+        "ecommercePurchases": 0,
+        "addToCarts": 0,
+        "checkouts": 0
+      },
+      {
+        "channel": "Organic Shopping",
+        "sessions": 9,
+        "totalUsers": 7,
+        "ecommercePurchases": 0,
+        "addToCarts": 0,
+        "checkouts": 0
+      },
+      {
+        "channel": "Organic Video",
+        "sessions": 3,
+        "totalUsers": 2,
+        "ecommercePurchases": 0,
+        "addToCarts": 0,
+        "checkouts": 0
+      },
+      {
+        "channel": "Email",
+        "sessions": 2,
+        "totalUsers": 2,
+        "ecommercePurchases": 0,
+        "addToCarts": 0,
+        "checkouts": 0
+      },
+      {
+        "channel": "Organic Social",
+        "sessions": 2,
+        "totalUsers": 2,
+        "ecommercePurchases": 0,
+        "addToCarts": 0,
+        "checkouts": 0
+      }
+    ],
+    "firstReturnedDate": "2026-10-13",
+    "metadata": {
+      "currencyCode": "USD",
+      "timeZone": "America/Chicago"
+    },
+    "note": "GA4 按属性时区统计最近30个完整自然日。返回数据未覆盖完整30天；此前日期缺少可用历史。加购、结账和购买为事件次数，不是去重人数漏斗；GA4购买次数不等同Shopify订单数。",
+    "reconciliation": {
+      "totalSessions": 1142,
+      "dailySessions": 1144,
+      "channelSessions": 1154
+    }
+  },
+  "provenance": {
+    "shopify": {
+      "source": "Shopify Admin REST API 2026-07",
+      "executedAt": "2026-10-26T09:48:09.312Z",
+      "pagesFetched": 3,
+      "paginationComplete": true,
+      "fetchedOrders": 158,
+      "testOrdersExcluded": true
+    },
+    "definitions": {
+      "totalOrders": "窗口内创建的非测试订单数，包含取消订单",
+      "orderAmount": "未取消订单的 current_total_price（含税、运费，包含未付款订单）；不是财务净收入",
+      "averageOrderValue": "未取消订单金额 / 未取消订单数",
+      "fulfillmentRate": "未取消且全部履约订单数 / 未取消订单数",
+      "productAmount": "未取消订单的当前商品数量 × 商品原单价；未扣分摊折扣，不等于订单金额",
+      "purchaseSessionRate": "GA4 sessionKeyEventRate:purchase × 100；包含purchase关键事件的会话占比"
+    },
+    "limitations": [
+      "首尾日期为部分自然日；趋势按店铺时区展示，无订单日期补零",
+      "Shopify与GA4统计窗口、时区及追踪覆盖不同，禁止将两个来源直接相除计算转化率"
+    ]
+  }
+}
