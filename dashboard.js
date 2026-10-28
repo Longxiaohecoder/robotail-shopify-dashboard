@@ -1,5 +1,6 @@
 'use strict';
 let snapshot;
+let selectedPeriod = 'month';
 const el = id => document.getElementById(id);
 const escapeHtml = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt = (v, digits = 0) => v == null || !Number.isFinite(Number(v)) ? 'N/A' : Number(v).toLocaleString('zh-CN', {minimumFractionDigits:digits,maximumFractionDigits:digits});
@@ -27,7 +28,7 @@ function chart(id, labels, values, title, unit, bars = false) {
 }
 function renderProducts(query = '') {
   const currency = escapeHtml(snapshot.shopInfo.currency);
-  const rows = snapshot.analytics.topProducts.filter(p=>p.name.toLowerCase().includes(query.toLowerCase()));
+  const rows = (snapshot.periodAnalytics?.[selectedPeriod]?.analytics ?? snapshot.analytics).topProducts.filter(p=>p.name.toLowerCase().includes(query.toLowerCase()));
   el('product-body').innerHTML = rows.length ? rows.map(p=>`<tr><td class="product">${escapeHtml(p.name)}</td><td class="num">${fmt(p.quantity)}</td><td class="num">${currency} ${fmt(p.amount,2)}</td></tr>`).join('') : '<tr><td colspan="3" class="empty">没有匹配的商品</td></tr>';
 }
 function trafficTimeline(traffic) {
@@ -38,15 +39,19 @@ function trafficTimeline(traffic) {
 }
 function renderDashboard(data) {
   snapshot=data;
-  const {analytics:a,shopInfo:shop,traffic:t}=data,s=a.summary,c=escapeHtml(shop.currency);
+  const {shopInfo:shop,traffic:t}=data;
+  const selected=data.periodAnalytics?.[selectedPeriod];
+  const a=selected?.analytics ?? data.analytics,s=a.summary,c=escapeHtml(shop.currency);
+  const labels={today:'今天',yesterday:'昨天',week:'最近7天',month:'最近30天'};
   const age=(Date.now()-Date.parse(data.generatedAt))/3600000,stale=age>36;
   el('data-status').textContent=stale?'快照已过期':'真实数据快照';
-  el('scope').textContent=`${shop.name} · 最近30天滚动窗口 · ${shop.timezone}`;
+  el('scope').textContent=`${shop.name} · ${labels[selectedPeriod]} · ${shop.timezone}`;
   el('last-update').textContent=`采集于 ${time(data.generatedAt)}（北京时间） · Shopify窗口 ${time(data.period.start,shop.timezone)} — ${time(data.period.end,shop.timezone)}`;
   let html=stale?'<p class="notice">这份快照已超过36小时，请重新采集后更新。页面重新加载只读取已保存数据。</p>':'';
-  html+=`<section aria-label="订单概览"><div class="metrics-grid">${card('订单金额 · 未取消',`<small>${c}</small>${fmt(s.orderAmount,2)}`,'含税及运费，包含未付款订单',true,delta('orderAmount'))}${card('创建订单数',fmt(s.totalOrders),`未取消 ${fmt(s.validOrders)} · 取消 ${fmt(s.cancelledOrders)}`,false,delta('totalOrders'))}${card('客单价 · 未取消',`<small>${c}</small>${fmt(s.averageOrderValue,2)}`,'订单金额 ÷ 未取消订单数',false,delta('averageOrderValue'))}${card('全部履约率',s.fulfillmentRate==null?'N/A':fmt(s.fulfillmentRate,1)+'%',`已全部履约 ${s.fulfilledOrders} / 未取消 ${s.validOrders}`)}</div></section>`;
-  html+=`<div class="chart-grid"><section class="card"><div class="card-head"><div><h2>每日订单</h2><p class="chart-sub">按创建时间 · 含取消 · 首尾为部分自然日</p></div></div>${chart('orders-chart',a.trends.dates,a.trends.orders,'每日订单','')}</section><section class="card"><div class="card-head"><div><h2>每日订单金额</h2><p class="chart-sub">未取消订单 · ${c}</p></div></div>${chart('amount-chart',a.trends.dates,a.trends.amount,'每日订单金额',shop.currency,true)}</section></div>`;
-  html+=`<div class="section-heading"><h2>流量与购买</h2><p>GA4 · 全渠道</p></div>`;
+  html+=`<section aria-label="订单时间选择" class="card period-control"><div><h2>订单时间范围</h2><p class="chart-sub">店铺时区 ${escapeHtml(shop.timezone)} · ${escapeHtml(selected?.startDate||'')} 至 ${escapeHtml(selected?.endDate||'')} · 今天包含未结束的当天；数据截至快照采集时间</p></div><div class="period-buttons">${Object.entries(labels).map(([key,label])=>`<button type="button" data-period="${key}" aria-pressed="${selectedPeriod===key}">${label}</button>`).join('')}</div></section>`;
+  html+=`<section aria-label="订单概览"><div class="metrics-grid">${card('订单金额 · 未取消',`<small>${c}</small>${fmt(s.orderAmount,2)}`,'含税及运费，包含未付款订单',true,selectedPeriod==='month'?delta('orderAmount'):'')}${card('创建订单数',fmt(s.totalOrders),`未取消 ${fmt(s.validOrders)} · 取消 ${fmt(s.cancelledOrders)}`,false,selectedPeriod==='month'?delta('totalOrders'):'')}${card('客单价 · 未取消',`<small>${c}</small>${fmt(s.averageOrderValue,2)}`,'订单金额 ÷ 未取消订单数',false,selectedPeriod==='month'?delta('averageOrderValue'):'')}${card('全部履约率',s.fulfillmentRate==null?'N/A':fmt(s.fulfillmentRate,1)+'%',`已全部履约 ${s.fulfilledOrders} / 未取消 ${s.validOrders}`)}</div></section>`;
+  html+=`<div class="chart-grid"><section class="card"><div class="card-head"><div><h2>每日订单</h2><p class="chart-sub">按创建时间 · 含取消 · ${selectedPeriod==='month'?'首尾为部分自然日':selectedPeriod==='today'||selectedPeriod==='week'?'今天为部分自然日':'完整自然日'}</p></div></div>${chart('orders-chart',a.trends.dates,a.trends.orders,'每日订单','')}</section><section class="card"><div class="card-head"><div><h2>每日订单金额</h2><p class="chart-sub">未取消订单 · ${c}</p></div></div>${chart('amount-chart',a.trends.dates,a.trends.amount,'每日订单金额',shop.currency,true)}</section></div>`;
+  html+=`<div class="section-heading"><h2>流量与购买</h2><p>GA4 · 全渠道 · 固定最近30个完整自然日，不随订单筛选变化</p></div>`;
   if(t?.status==='connected') {
     const g=t.summary;
     html+=`<p class="notice">${escapeHtml(t.note)}<br>请求区间：${escapeHtml(t.period.start)} — ${escapeHtml(t.period.end)}（${escapeHtml(t.period.timezone)}）；本次首个返回日期：${escapeHtml(t.firstReturnedDate||'无')}。</p><p class="chart-sub">GA4无维度总量 ${fmt(t.summary.sessions)} 次；逐日行合计 ${fmt(t.daily.reduce((sum,r)=>sum+r.sessions,0))} 次，渠道行合计 ${fmt(t.channels.reduce((sum,r)=>sum+r.sessions,0))} 次。不同维度查询存在差异，卡片以无维度总量为准，暂不据此做渠道占比分摊。</p><div class="metrics-grid" style="margin-top:14px">${card('会话数',fmt(g.sessions),'GA4 sessions')}${card('访问用户',fmt(g.totalUsers),'GA4 区间去重 totalUsers')}${card('购买次数',fmt(g.ecommercePurchases),'GA4 ecommercePurchases')}${card('购买会话转化率',g.purchaseSessionRate==null?'N/A':fmt(g.purchaseSessionRate,2)+'%',g.purchaseSessionRate==null?escapeHtml(t.rateReason||'未返回'): '包含 purchase 关键事件的会话占比')}</div>`;
@@ -55,6 +60,7 @@ function renderDashboard(data) {
   html+=`<div class="chart-grid"><section class="card"><div class="card-head"><div><h2>热销商品 · Top 10</h2><p class="chart-sub">按当前数量排序；金额为未扣分摊折扣的商品原价金额</p></div><input id="product-search" class="search" placeholder="搜索商品" aria-label="搜索热销商品"></div><div class="table-wrap"><table><thead><tr><th>商品</th><th class="num">数量</th><th class="num">原价金额</th></tr></thead><tbody id="product-body"></tbody></table></div></section><section class="card"><div class="card-head"><h2>订单履约情况</h2></div><div class="status-list"><div><div class="status-number">${fmt(s.fulfilledOrders)}</div><div class="status-label">已全部履约</div></div><div><div class="status-number">${fmt(s.unfulfilledOrders)}</div><div class="status-label">未全部履约</div></div><div><div class="status-number">${fmt(s.cancelledOrders)}</div><div class="status-label">已取消</div></div></div><p class="muted">未取消订单中 ${fmt(s.paidOrders)} 单为已支付或退款后状态。</p><p class="chart-sub">商品总数 ${data.products.total} · active状态 ${data.products.published}</p></section></div>`;
   html+=`<details><summary>数据来源与统计口径</summary><div class="source-grid"><div><h3>Shopify</h3><p>${escapeHtml(data.provenance.shopify.source)} · 已完成分页 · ${data.provenance.shopify.pagesFetched}次请求 · 排除测试订单</p><ul>${Object.values(data.provenance.definitions).map(v=>`<li>${escapeHtml(v)}</li>`).join('')}</ul></div><div><h3>覆盖与更新</h3><p>${escapeHtml(data.comparison.reason||'环比基线完整，按相邻等长窗口比较。')}</p><ul>${data.provenance.limitations.map(v=>`<li>${escapeHtml(v)}</li>`).join('')}</ul><p>重新加载仅重读快照；重新采集需运行 npm run fetch-analytics，发布后其他设备才能看到更新。</p></div></div></details>`;
   el('dashboard-content').innerHTML=html;
+  document.querySelectorAll('[data-period]').forEach(button=>button.addEventListener('click',()=>{selectedPeriod=button.dataset.period;renderDashboard(snapshot);}));
   renderProducts();
   el('product-search').addEventListener('input',e=>renderProducts(e.target.value));
   el('download').disabled=false;
@@ -65,7 +71,7 @@ async function loadDashboard() {
     const response=await fetch('./analytics-data.json',{cache:'no-store'});
     if(!response.ok)throw Error(`数据快照 HTTP ${response.status}`);
     const data=await response.json();
-    if(data.schemaVersion!==2||data.realData!==true||!data.analytics?.summary||!data.period)throw Error('快照格式过旧或不是真实数据，请重新采集');
+    if(data.schemaVersion!==2||data.realData!==true||!data.analytics?.summary||!data.period||!data.periodAnalytics?.today||!data.periodAnalytics?.yesterday||!data.periodAnalytics?.week||!data.periodAnalytics?.month)throw Error('快照格式过旧或不是真实数据，请重新采集');
     renderDashboard(data);
   } catch(error) {
     el('data-status').textContent='数据加载失败';
