@@ -48,7 +48,7 @@ function renderDashboard(data) {
   el('scope').textContent=`${shop.name} · ${labels[selectedPeriod]} · ${shop.timezone}`;
   el('last-update').textContent=`采集于 ${time(data.generatedAt)}（北京时间） · Shopify窗口 ${time(data.period.start,shop.timezone)} — ${time(data.period.end,shop.timezone)}`;
   let html=stale?'<p class="notice">这份快照已超过36小时，请重新采集后更新。页面重新加载只读取已保存数据。</p>':'';
-  html+=`<section aria-label="订单时间选择" class="card period-control"><div><h2>订单时间范围</h2><p class="chart-sub">店铺时区 ${escapeHtml(shop.timezone)} · ${escapeHtml(selected?.startDate||'')} 至 ${escapeHtml(selected?.endDate||'')} · 今天包含未结束的当天；数据截至快照采集时间</p></div><div class="period-buttons">${Object.entries(labels).map(([key,label])=>`<button type="button" data-period="${key}" aria-pressed="${selectedPeriod===key}">${label}</button>`).join('')}</div></section>`;
+
   html+=`<section aria-label="订单概览"><div class="metrics-grid">${card('订单金额 · 未取消',`<small>${c}</small>${fmt(s.orderAmount,2)}`,'含税及运费，包含未付款订单',true,selectedPeriod==='month'?delta('orderAmount'):'')}${card('创建订单数',fmt(s.totalOrders),`未取消 ${fmt(s.validOrders)} · 取消 ${fmt(s.cancelledOrders)}`,false,selectedPeriod==='month'?delta('totalOrders'):'')}${card('客单价 · 未取消',`<small>${c}</small>${fmt(s.averageOrderValue,2)}`,'订单金额 ÷ 未取消订单数',false,selectedPeriod==='month'?delta('averageOrderValue'):'')}${card('全部履约率',s.fulfillmentRate==null?'N/A':fmt(s.fulfillmentRate,1)+'%',`已全部履约 ${s.fulfilledOrders} / 未取消 ${s.validOrders}`)}</div></section>`;
   html+=`<div class="chart-grid"><section class="card"><div class="card-head"><div><h2>每日订单</h2><p class="chart-sub">按创建时间 · 含取消 · ${selectedPeriod==='month'?'首尾为部分自然日':selectedPeriod==='today'||selectedPeriod==='week'?'今天为部分自然日':'完整自然日'}</p></div></div>${chart('orders-chart',a.trends.dates,a.trends.orders,'每日订单','')}</section><section class="card"><div class="card-head"><div><h2>每日订单金额</h2><p class="chart-sub">未取消订单 · ${c}</p></div></div>${chart('amount-chart',a.trends.dates,a.trends.amount,'每日订单金额',shop.currency,true)}</section></div>`;
   html+=`<div class="section-heading"><h2>流量与购买</h2><p>GA4 · 全渠道 · 固定最近30个完整自然日，不随订单筛选变化</p></div>`;
@@ -60,7 +60,8 @@ function renderDashboard(data) {
   html+=`<div class="chart-grid"><section class="card"><div class="card-head"><div><h2>热销商品 · Top 10</h2><p class="chart-sub">按当前数量排序；金额为未扣分摊折扣的商品原价金额</p></div><input id="product-search" class="search" placeholder="搜索商品" aria-label="搜索热销商品"></div><div class="table-wrap"><table><thead><tr><th>商品</th><th class="num">数量</th><th class="num">原价金额</th></tr></thead><tbody id="product-body"></tbody></table></div></section><section class="card"><div class="card-head"><h2>订单履约情况</h2></div><div class="status-list"><div><div class="status-number">${fmt(s.fulfilledOrders)}</div><div class="status-label">已全部履约</div></div><div><div class="status-number">${fmt(s.unfulfilledOrders)}</div><div class="status-label">未全部履约</div></div><div><div class="status-number">${fmt(s.cancelledOrders)}</div><div class="status-label">已取消</div></div></div><p class="muted">未取消订单中 ${fmt(s.paidOrders)} 单为已支付或退款后状态。</p><p class="chart-sub">商品总数 ${data.products.total} · active状态 ${data.products.published}</p></section></div>`;
   html+=`<details><summary>数据来源与统计口径</summary><div class="source-grid"><div><h3>Shopify</h3><p>${escapeHtml(data.provenance.shopify.source)} · 已完成分页 · ${data.provenance.shopify.pagesFetched}次请求 · 排除测试订单</p><ul>${Object.values(data.provenance.definitions).map(v=>`<li>${escapeHtml(v)}</li>`).join('')}</ul></div><div><h3>覆盖与更新</h3><p>${escapeHtml(data.comparison.reason||'环比基线完整，按相邻等长窗口比较。')}</p><ul>${data.provenance.limitations.map(v=>`<li>${escapeHtml(v)}</li>`).join('')}</ul><p>重新加载仅重读快照；重新采集需运行 npm run fetch-analytics，发布后其他设备才能看到更新。</p></div></div></details>`;
   el('dashboard-content').innerHTML=html;
-  document.querySelectorAll('[data-period]').forEach(button=>button.addEventListener('click',()=>{selectedPeriod=button.dataset.period;renderDashboard(snapshot);}));
+  el('period-description').textContent=`店铺时区 ${shop.timezone} · ${selected?.startDate || ''} 至 ${selected?.endDate || ''} · 数据截至快照采集时间`;
+  document.querySelectorAll('[data-period]').forEach(button=>{button.disabled=false;button.setAttribute('aria-pressed',String(button.dataset.period===selectedPeriod));});
   renderProducts();
   el('product-search').addEventListener('input',e=>renderProducts(e.target.value));
   el('download').disabled=false;
@@ -79,6 +80,7 @@ async function loadDashboard() {
     else el('dashboard-content').innerHTML=`<div class="notice error" role="alert">无法显示数据：${escapeHtml(error.message)}。请检查快照文件并重新加载。</div>`;
   } finally {el('reload').disabled=false;}
 }
+document.querySelectorAll('[data-period]').forEach(button=>button.addEventListener('click',()=>{if(snapshot){selectedPeriod=button.dataset.period;renderDashboard(snapshot);}}));
 el('reload').addEventListener('click',loadDashboard);
 el('download').addEventListener('click',()=>{if(!snapshot)return;const url=URL.createObjectURL(new Blob([JSON.stringify(snapshot,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=`robotail-${snapshot.generatedAt.slice(0,10)}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
 loadDashboard();

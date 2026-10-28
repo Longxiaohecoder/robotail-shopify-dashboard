@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light"><link rel="icon" href="data:,"><title>Robotail · 经营看板</title>
-  <link rel="stylesheet" href="./styles.css"><script defer src="./dashboard.js"></script>
+  <link rel="stylesheet" href="./styles.css?v=20261028-2"><script defer src="./dashboard.js?v=20261028-2"></script>
 </head>
 <body>
   <nav class="nav"><div class="nav-container"><a class="brand" href="./">Robotail <span>Analytics</span></a><span id="data-status" role="status">正在读取快照</span></div></nav>
   <main class="container">
     <header class="header"><div><p class="eyebrow">SHOPIFY / BUSINESS OVERVIEW</p><h1>独立站经营看板</h1><p id="scope" class="muted">最近30天 · 订单与流量</p></div><div class="actions"><button id="reload" type="button">重新加载快照</button><button id="download" type="button" disabled>导出数据</button></div></header>
+    <section class="period-control" aria-label="切换订单时间">
+      <div><div class="period-title">查看订单时间 <span>点击切换 ↓</span></div><p id="period-description">正在加载数据…</p></div>
+      <div class="period-buttons"><button type="button" data-period="today" disabled>今天</button><button type="button" data-period="yesterday" disabled>昨天</button><button type="button" data-period="week" disabled>最近7天</button><button type="button" data-period="month" aria-pressed="true" disabled>最近30天</button></div>
+    </section>
     <div id="last-update" class="freshness" aria-live="polite"></div>
     <div id="dashboard-content" aria-live="polite"><p class="notice">正在加载真实数据…</p></div>
     <footer>Robotail · 数据来自 Shopify 与 GA4，更新时间以快照为准。</footer>
