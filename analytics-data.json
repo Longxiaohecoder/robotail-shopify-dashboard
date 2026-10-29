@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "realData": true,
-  "generatedAt": "2026-10-29T01:10:27.689Z",
+  "generatedAt": "2026-10-29T03:26:00.563Z",
   "shopInfo": {
     "name": "Robotail",
     "domain": "robotailpets.com",
@@ -9,14 +9,14 @@
     "timezone": "America/Chicago"
   },
   "period": {
-    "start": "2026-09-29T01:04:26.442Z",
-    "end": "2026-10-29T01:04:26.442Z",
+    "start": "2026-09-29T03:25:50.517Z",
+    "end": "2026-10-29T03:25:50.517Z",
     "timezone": "America/Chicago",
     "label": "最近30天滚动窗口"
   },
   "comparison": {
-    "start": "2026-08-30T01:04:26.442Z",
-    "end": "2026-09-29T01:04:26.442Z",
+    "start": "2026-08-30T03:25:50.517Z",
+    "end": "2026-09-29T03:25:50.517Z",
     "complete": false,
     "reason": "未授予 read_all_orders，前30天基线可能受60天历史权限边界影响，暂不显示环比",
     "summary": null
@@ -29,9 +29,9 @@
       "orderAmount": 6073.61,
       "averageOrderValue": 78.88,
       "paidOrders": 77,
-      "fulfilledOrders": 70,
-      "unfulfilledOrders": 7,
-      "fulfillmentRate": 90.91
+      "fulfilledOrders": 72,
+      "unfulfilledOrders": 5,
+      "fulfillmentRate": 93.51
     },
     "trends": {
       "dates": [
@@ -199,9 +199,9 @@
           "orderAmount": 79.22,
           "averageOrderValue": 26.41,
           "paidOrders": 3,
-          "fulfilledOrders": 0,
-          "unfulfilledOrders": 3,
-          "fulfillmentRate": 0
+          "fulfilledOrders": 2,
+          "unfulfilledOrders": 1,
+          "fulfillmentRate": 66.67
         },
         "trends": {
           "dates": [
@@ -273,9 +273,9 @@
           "orderAmount": 1437.92,
           "averageOrderValue": 102.71,
           "paidOrders": 14,
-          "fulfilledOrders": 10,
-          "unfulfilledOrders": 4,
-          "fulfillmentRate": 71.43
+          "fulfilledOrders": 12,
+          "unfulfilledOrders": 2,
+          "fulfillmentRate": 85.71
         },
         "trends": {
           "dates": [
@@ -366,9 +366,9 @@
           "orderAmount": 6073.61,
           "averageOrderValue": 78.88,
           "paidOrders": 77,
-          "fulfilledOrders": 70,
-          "unfulfilledOrders": 7,
-          "fulfillmentRate": 90.91
+          "fulfilledOrders": 72,
+          "unfulfilledOrders": 5,
+          "fulfillmentRate": 93.51
         },
         "trends": {
           "dates": [
@@ -531,14 +531,235 @@
     "published": 39
   },
   "traffic": {
-    "status": "unavailable",
-    "reason": "Google network request failed: URLError",
-    "executedAt": "2026-10-29T01:10:27.689Z"
+    "status": "connected",
+    "source": "GA4 Data API · 全渠道",
+    "executedAt": "2026-10-29T03:26:00.563Z",
+    "period": {
+      "start": "2026-09-28",
+      "end": "2026-10-27",
+      "timezone": "America/Chicago"
+    },
+    "summary": {
+      "sessions": 1316,
+      "totalUsers": 927,
+      "ecommercePurchases": 27,
+      "addToCarts": 96,
+      "checkouts": 53,
+      "purchaseSessionRate": 2.0516717325227964
+    },
+    "rateReason": null,
+    "daily": [
+      {
+        "date": "2026-10-13",
+        "sessions": 93,
+        "totalUsers": 73,
+        "ecommercePurchases": 0,
+        "addToCarts": 3,
+        "checkouts": 1
+      },
+      {
+        "date": "2026-10-14",
+        "sessions": 72,
+        "totalUsers": 60,
+        "ecommercePurchases": 1,
+        "addToCarts": 3,
+        "checkouts": 1
+      },
+      {
+        "date": "2026-10-15",
+        "sessions": 106,
+        "totalUsers": 92,
+        "ecommercePurchases": 0,
+        "addToCarts": 4,
+        "checkouts": 3
+      },
+      {
+        "date": "2026-10-16",
+        "sessions": 93,
+        "totalUsers": 76,
+        "ecommercePurchases": 3,
+        "addToCarts": 7,
+        "checkouts": 8
+      },
+      {
+        "date": "2026-10-17",
+        "sessions": 97,
+        "totalUsers": 83,
+        "ecommercePurchases": 1,
+        "addToCarts": 15,
+        "checkouts": 7
+      },
+      {
+        "date": "2026-10-18",
+        "sessions": 93,
+        "totalUsers": 77,
+        "ecommercePurchases": 4,
+        "addToCarts": 6,
+        "checkouts": 4
+      },
+      {
+        "date": "2026-10-19",
+        "sessions": 98,
+        "totalUsers": 86,
+        "ecommercePurchases": 3,
+        "addToCarts": 3,
+        "checkouts": 4
+      },
+      {
+        "date": "2026-10-20",
+        "sessions": 105,
+        "totalUsers": 87,
+        "ecommercePurchases": 1,
+        "addToCarts": 17,
+        "checkouts": 0
+      },
+      {
+        "date": "2026-10-21",
+        "sessions": 64,
+        "totalUsers": 52,
+        "ecommercePurchases": 3,
+        "addToCarts": 4,
+        "checkouts": 1
+      },
+      {
+        "date": "2026-10-22",
+        "sessions": 74,
+        "totalUsers": 63,
+        "ecommercePurchases": 2,
+        "addToCarts": 2,
+        "checkouts": 1
+      },
+      {
+        "date": "2026-10-23",
+        "sessions": 86,
+        "totalUsers": 79,
+        "ecommercePurchases": 3,
+        "addToCarts": 4,
+        "checkouts": 6
+      },
+      {
+        "date": "2026-10-24",
+        "sessions": 79,
+        "totalUsers": 66,
+        "ecommercePurchases": 3,
+        "addToCarts": 8,
+        "checkouts": 4
+      },
+      {
+        "date": "2026-10-25",
+        "sessions": 84,
+        "totalUsers": 77,
+        "ecommercePurchases": 1,
+        "addToCarts": 10,
+        "checkouts": 6
+      },
+      {
+        "date": "2026-10-26",
+        "sessions": 115,
+        "totalUsers": 101,
+        "ecommercePurchases": 2,
+        "addToCarts": 8,
+        "checkouts": 3
+      },
+      {
+        "date": "2026-10-27",
+        "sessions": 58,
+        "totalUsers": 50,
+        "ecommercePurchases": 0,
+        "addToCarts": 2,
+        "checkouts": 4
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "sessions": 691,
+        "totalUsers": 527,
+        "ecommercePurchases": 7,
+        "addToCarts": 24,
+        "checkouts": 20
+      },
+      {
+        "channel": "Organic Search",
+        "sessions": 557,
+        "totalUsers": 373,
+        "ecommercePurchases": 17,
+        "addToCarts": 48,
+        "checkouts": 32
+      },
+      {
+        "channel": "Referral",
+        "sessions": 21,
+        "totalUsers": 15,
+        "ecommercePurchases": 3,
+        "addToCarts": 23,
+        "checkouts": 0
+      },
+      {
+        "channel": "AI Assistant",
+        "sessions": 17,
+        "totalUsers": 17,
+        "ecommercePurchases": 0,
+        "addToCarts": 0,
+        "checkouts": 1
+      },
+      {
+        "channel": "Organic Shopping",
+        "sessions": 12,
+        "totalUsers": 10,
+        "ecommercePurchases": 0,
+        "addToCarts": 1,
+        "checkouts": 0
+      },
+      {
+        "channel": "Unassigned",
+        "sessions": 10,
+        "totalUsers": 10,
+        "ecommercePurchases": 0,
+        "addToCarts": 0,
+        "checkouts": 0
+      },
+      {
+        "channel": "Organic Video",
+        "sessions": 3,
+        "totalUsers": 2,
+        "ecommercePurchases": 0,
+        "addToCarts": 0,
+        "checkouts": 0
+      },
+      {
+        "channel": "Email",
+        "sessions": 2,
+        "totalUsers": 2,
+        "ecommercePurchases": 0,
+        "addToCarts": 0,
+        "checkouts": 0
+      },
+      {
+        "channel": "Organic Social",
+        "sessions": 2,
+        "totalUsers": 2,
+        "ecommercePurchases": 0,
+        "addToCarts": 0,
+        "checkouts": 0
+      }
+    ],
+    "firstReturnedDate": "2026-10-13",
+    "reconciliation": {
+      "totalSessions": 1316,
+      "dailySessions": 1317,
+      "channelSessions": 1315
+    },
+    "metadata": {
+      "currencyCode": "USD",
+      "timeZone": "America/Chicago"
+    },
+    "note": "GA4 按属性时区统计最近30个完整自然日。返回数据未覆盖完整30天；此前日期缺少可用历史。加购、结账和购买为事件次数，不是去重人数漏斗；GA4购买次数不等同Shopify订单数。"
   },
   "provenance": {
     "shopify": {
       "source": "Shopify Admin REST API 2026-07",
-      "executedAt": "2026-10-29T01:10:27.690Z",
+      "executedAt": "2026-10-29T03:26:00.563Z",
       "pagesFetched": 3,
       "paginationComplete": true,
       "fetchedOrders": 157,
