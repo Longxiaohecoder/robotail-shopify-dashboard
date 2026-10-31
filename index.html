@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light"><link rel="icon" href="data:,"><title>Robotail · 经营看板</title>
-  <link rel="stylesheet" href="./styles.css?v=20261028-2"><script defer src="./dashboard.js?v=20261028-2"></script>
+  <link rel="stylesheet" href="./styles.css?v=20261031-1"><script defer src="./dashboard.js?v=20261031-1"></script><script defer src="./portal.js?v=20261031-1"></script>
 </head>
 <body>
   <nav class="nav"><div class="nav-container"><a class="brand" href="./">Robotail <span>Analytics</span></a><span id="data-status" role="status">正在读取快照</span></div></nav>
-  <main class="container">
+  <div class="dashboard-tabs" role="tablist" aria-label="选择数据看板"><button id="tab-shopify" type="button" role="tab" aria-selected="true" aria-controls="shop-panel">独立站经营</button><button id="tab-blog" type="button" role="tab" aria-selected="false" aria-controls="blog-panel" tabindex="-1">博客访问</button></div>
+  <main class="container" id="shop-panel" role="tabpanel" aria-labelledby="tab-shopify">
     <header class="header"><div><p class="eyebrow">SHOPIFY / BUSINESS OVERVIEW</p><h1>独立站经营看板</h1><p id="scope" class="muted">最近30天 · 订单与流量</p></div><div class="actions"><button id="reload" type="button">重新加载快照</button><button id="download" type="button" disabled>导出数据</button></div></header>
     <section class="period-control" aria-label="切换订单时间">
       <div><div class="period-title">查看订单时间 <span>点击切换 ↓</span></div><p id="period-description">正在加载数据…</p></div>
@@ -17,5 +18,6 @@
     <div id="dashboard-content" aria-live="polite"><p class="notice">正在加载真实数据…</p></div>
     <footer>Robotail · 数据来自 Shopify 与 GA4，更新时间以快照为准。</footer>
   </main>
+  <section id="blog-panel" role="tabpanel" aria-labelledby="tab-blog" hidden><div class="blog-panel-note">博客使用独立的 GA4 属性，数据从 2026 年 10 月 31 日起积累；统计时间和覆盖范围以博客看板为准。<a href="./blog/index.html" target="_blank" rel="noopener">单独打开博客看板 ↗</a></div><iframe id="blog-dashboard-frame" title="Robotail 博客访问数据看板" data-src="./blog/index.html" loading="lazy"></iframe><noscript><a href="./blog/index.html">打开博客看板</a></noscript></section>
 </body>
 </html>

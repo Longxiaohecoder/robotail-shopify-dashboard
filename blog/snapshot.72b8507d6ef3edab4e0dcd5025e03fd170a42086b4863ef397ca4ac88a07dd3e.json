@@ -1,0 +1,298 @@
+{
+  "title": "Robotail 博客访问看板",
+  "surface": "dashboard",
+  "buildStatus": "complete",
+  "generatedAt": "2026-10-31T06:35:32.276Z",
+  "status": "collecting",
+  "host": "auto-blog-system-omega.vercel.app",
+  "timezone": "America/New_York",
+  "historyStart": "2026-09-22",
+  "historyStartNote": "最早仓库提交日期，不等同于已证明的上线时间。",
+  "trackingStartedAt": "2026-10-31T04:44:34.175Z",
+  "measurementId": "G-MRVLWE5V3G",
+  "propertyId": "561695779",
+  "configured": true,
+  "ownerBrowserExcluded": true,
+  "internalFilterActive": true,
+  "consentScope": "只统计主动同意的浏览器；未同意、拦截统计及被排除的浏览器不在统计内。",
+  "exportPreferences": {
+    "selected": null,
+    "destinations": []
+  },
+  "filters": [],
+  "queries": {
+    "summary_all": {
+      "rows": [],
+      "source": {
+        "type": "api",
+        "name": "Google Analytics Data API · 博客域名单独过滤",
+        "executedAt": "2026-10-31T06:35:32.276Z",
+        "period": {
+          "start": "2026-09-22",
+          "end": "yesterday"
+        },
+        "url": "https://analytics.google.com/",
+        "description": "hostName EXACT auto-blog-system-omega.vercel.app. No rows before tracking is established means unavailable, not zero visitors.",
+        "metricDefinitions": [
+          {
+            "label": "访客",
+            "definition": "GA4 totalUsers，按本期整体去重，不累加每日访客。"
+          },
+          {
+            "label": "平均有效停留 / 次",
+            "definition": "userEngagementDuration / sessions。页面在前台的有效参与秒数；不是打开标签页的总时长。"
+          },
+          {
+            "label": "外部真实访客",
+            "definition": "没有内部流量标记和排除证据时无法识别；不是总访客减一个人。"
+          }
+        ]
+      },
+      "status": "observed"
+    },
+    "daily_all": {
+      "rows": [],
+      "source": {
+        "name": "Google Analytics Data API · auto-blog-system-omega.vercel.app",
+        "url": "https://analytics.google.com/",
+        "executedAt": "2026-10-31T06:35:32.276Z",
+        "period": {
+          "start": "2026-09-22",
+          "end": "yesterday"
+        },
+        "description": "Exact host filter; this period only. No cross-site totals."
+      }
+    },
+    "pages_all": {
+      "rows": [],
+      "source": {
+        "name": "Google Analytics Data API · auto-blog-system-omega.vercel.app",
+        "url": "https://analytics.google.com/",
+        "executedAt": "2026-10-31T06:35:32.276Z",
+        "period": {
+          "start": "2026-09-22",
+          "end": "yesterday"
+        },
+        "description": "Exact host filter; this period only. No cross-site totals."
+      }
+    },
+    "channels_all": {
+      "rows": [],
+      "source": {
+        "name": "Google Analytics Data API · auto-blog-system-omega.vercel.app",
+        "url": "https://analytics.google.com/",
+        "executedAt": "2026-10-31T06:35:32.276Z",
+        "period": {
+          "start": "2026-09-22",
+          "end": "yesterday"
+        },
+        "description": "Exact host filter; this period only. No cross-site totals."
+      }
+    },
+    "summary_30d": {
+      "rows": [],
+      "source": {
+        "type": "api",
+        "name": "Google Analytics Data API · 博客域名单独过滤",
+        "executedAt": "2026-10-31T06:35:32.276Z",
+        "period": {
+          "start": "30daysAgo",
+          "end": "yesterday"
+        },
+        "url": "https://analytics.google.com/",
+        "description": "hostName EXACT auto-blog-system-omega.vercel.app. No rows before tracking is established means unavailable, not zero visitors.",
+        "metricDefinitions": [
+          {
+            "label": "访客",
+            "definition": "GA4 totalUsers，按本期整体去重，不累加每日访客。"
+          },
+          {
+            "label": "平均有效停留 / 次",
+            "definition": "userEngagementDuration / sessions。页面在前台的有效参与秒数；不是打开标签页的总时长。"
+          },
+          {
+            "label": "外部真实访客",
+            "definition": "没有内部流量标记和排除证据时无法识别；不是总访客减一个人。"
+          }
+        ]
+      },
+      "status": "observed"
+    },
+    "daily_30d": {
+      "rows": [],
+      "source": {
+        "name": "Google Analytics Data API · auto-blog-system-omega.vercel.app",
+        "url": "https://analytics.google.com/",
+        "executedAt": "2026-10-31T06:35:32.276Z",
+        "period": {
+          "start": "30daysAgo",
+          "end": "yesterday"
+        },
+        "description": "Exact host filter; this period only. No cross-site totals."
+      }
+    },
+    "pages_30d": {
+      "rows": [],
+      "source": {
+        "name": "Google Analytics Data API · auto-blog-system-omega.vercel.app",
+        "url": "https://analytics.google.com/",
+        "executedAt": "2026-10-31T06:35:32.276Z",
+        "period": {
+          "start": "30daysAgo",
+          "end": "yesterday"
+        },
+        "description": "Exact host filter; this period only. No cross-site totals."
+      }
+    },
+    "channels_30d": {
+      "rows": [],
+      "source": {
+        "name": "Google Analytics Data API · auto-blog-system-omega.vercel.app",
+        "url": "https://analytics.google.com/",
+        "executedAt": "2026-10-31T06:35:32.276Z",
+        "period": {
+          "start": "30daysAgo",
+          "end": "yesterday"
+        },
+        "description": "Exact host filter; this period only. No cross-site totals."
+      }
+    },
+    "summary_7d": {
+      "rows": [],
+      "source": {
+        "type": "api",
+        "name": "Google Analytics Data API · 博客域名单独过滤",
+        "executedAt": "2026-10-31T06:35:32.276Z",
+        "period": {
+          "start": "7daysAgo",
+          "end": "yesterday"
+        },
+        "url": "https://analytics.google.com/",
+        "description": "hostName EXACT auto-blog-system-omega.vercel.app. No rows before tracking is established means unavailable, not zero visitors.",
+        "metricDefinitions": [
+          {
+            "label": "访客",
+            "definition": "GA4 totalUsers，按本期整体去重，不累加每日访客。"
+          },
+          {
+            "label": "平均有效停留 / 次",
+            "definition": "userEngagementDuration / sessions。页面在前台的有效参与秒数；不是打开标签页的总时长。"
+          },
+          {
+            "label": "外部真实访客",
+            "definition": "没有内部流量标记和排除证据时无法识别；不是总访客减一个人。"
+          }
+        ]
+      },
+      "status": "observed"
+    },
+    "daily_7d": {
+      "rows": [],
+      "source": {
+        "name": "Google Analytics Data API · auto-blog-system-omega.vercel.app",
+        "url": "https://analytics.google.com/",
+        "executedAt": "2026-10-31T06:35:32.276Z",
+        "period": {
+          "start": "7daysAgo",
+          "end": "yesterday"
+        },
+        "description": "Exact host filter; this period only. No cross-site totals."
+      }
+    },
+    "pages_7d": {
+      "rows": [],
+      "source": {
+        "name": "Google Analytics Data API · auto-blog-system-omega.vercel.app",
+        "url": "https://analytics.google.com/",
+        "executedAt": "2026-10-31T06:35:32.276Z",
+        "period": {
+          "start": "7daysAgo",
+          "end": "yesterday"
+        },
+        "description": "Exact host filter; this period only. No cross-site totals."
+      }
+    },
+    "channels_7d": {
+      "rows": [],
+      "source": {
+        "name": "Google Analytics Data API · auto-blog-system-omega.vercel.app",
+        "url": "https://analytics.google.com/",
+        "executedAt": "2026-10-31T06:35:32.276Z",
+        "period": {
+          "start": "7daysAgo",
+          "end": "yesterday"
+        },
+        "description": "Exact host filter; this period only. No cross-site totals."
+      }
+    },
+    "summary_yesterday": {
+      "rows": [],
+      "source": {
+        "type": "api",
+        "name": "Google Analytics Data API · 博客域名单独过滤",
+        "executedAt": "2026-10-31T06:35:32.276Z",
+        "period": {
+          "start": "yesterday",
+          "end": "yesterday"
+        },
+        "url": "https://analytics.google.com/",
+        "description": "hostName EXACT auto-blog-system-omega.vercel.app. No rows before tracking is established means unavailable, not zero visitors.",
+        "metricDefinitions": [
+          {
+            "label": "访客",
+            "definition": "GA4 totalUsers，按本期整体去重，不累加每日访客。"
+          },
+          {
+            "label": "平均有效停留 / 次",
+            "definition": "userEngagementDuration / sessions。页面在前台的有效参与秒数；不是打开标签页的总时长。"
+          },
+          {
+            "label": "外部真实访客",
+            "definition": "没有内部流量标记和排除证据时无法识别；不是总访客减一个人。"
+          }
+        ]
+      },
+      "status": "observed"
+    },
+    "daily_yesterday": {
+      "rows": [],
+      "source": {
+        "name": "Google Analytics Data API · auto-blog-system-omega.vercel.app",
+        "url": "https://analytics.google.com/",
+        "executedAt": "2026-10-31T06:35:32.276Z",
+        "period": {
+          "start": "yesterday",
+          "end": "yesterday"
+        },
+        "description": "Exact host filter; this period only. No cross-site totals."
+      }
+    },
+    "pages_yesterday": {
+      "rows": [],
+      "source": {
+        "name": "Google Analytics Data API · auto-blog-system-omega.vercel.app",
+        "url": "https://analytics.google.com/",
+        "executedAt": "2026-10-31T06:35:32.276Z",
+        "period": {
+          "start": "yesterday",
+          "end": "yesterday"
+        },
+        "description": "Exact host filter; this period only. No cross-site totals."
+      }
+    },
+    "channels_yesterday": {
+      "rows": [],
+      "source": {
+        "name": "Google Analytics Data API · auto-blog-system-omega.vercel.app",
+        "url": "https://analytics.google.com/",
+        "executedAt": "2026-10-31T06:35:32.276Z",
+        "period": {
+          "start": "yesterday",
+          "end": "yesterday"
+        },
+        "description": "Exact host filter; this period only. No cross-site totals."
+      }
+    }
+  },
+  "id": "dashboard:bda955d9-bb21-490e-be0b-79bcf204bcda"
+}
