@@ -2,8 +2,8 @@
   "title": "Robotail 博客访问看板",
   "surface": "dashboard",
   "buildStatus": "complete",
-  "generatedAt": "2026-11-02T07:34:04.481Z",
-  "status": "awaiting-report-access",
+  "generatedAt": "2026-11-02T07:46:54.091Z",
+  "status": "observed",
   "host": "auto-blog-system-omega.vercel.app",
   "timezone": "UTC",
   "historyStart": "2026-09-22",
@@ -22,164 +22,197 @@
   "filters": [],
   "queries": {
     "summary_all": {
-      "rows": [],
+      "rows": [
+        {
+          "screenPageViews": 1,
+          "totalUsers": null,
+          "averageEngagementPerSession": null
+        }
+      ],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "No GA4 data is substituted. Page views are not verified human visitors. API access is unavailable until a separately authorized team token exists.",
-        "executedAt": null
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-02",
+        "executedAt": "2026-11-02T07:46:54.091Z"
       },
-      "status": "unavailable"
+      "status": "observed"
     },
     "daily_all": {
-      "rows": [],
+      "rows": [
+        {
+          "date": "2026-11-02",
+          "screenPageViews": 1
+        }
+      ],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "No GA4 data is substituted. Page views are not verified human visitors. API access is unavailable until a separately authorized team token exists.",
-        "executedAt": null
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-02",
+        "executedAt": "2026-11-02T07:46:54.091Z"
       },
-      "status": "unavailable"
+      "status": "observed"
     },
     "pages_all": {
       "rows": [],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "No GA4 data is substituted. Page views are not verified human visitors. API access is unavailable until a separately authorized team token exists.",
-        "executedAt": null
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-02",
+        "executedAt": "2026-11-02T07:46:54.091Z"
       },
-      "status": "unavailable"
+      "status": "observed"
     },
     "channels_all": {
       "rows": [],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "No GA4 data is substituted. Page views are not verified human visitors. API access is unavailable until a separately authorized team token exists.",
-        "executedAt": null
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-02",
+        "executedAt": "2026-11-02T07:46:54.091Z"
       },
-      "status": "unavailable"
+      "status": "observed"
     },
     "summary_30d": {
-      "rows": [],
+      "rows": [
+        {
+          "screenPageViews": 1,
+          "totalUsers": null,
+          "averageEngagementPerSession": null
+        }
+      ],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "No GA4 data is substituted. Page views are not verified human visitors. API access is unavailable until a separately authorized team token exists.",
-        "executedAt": null
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-02",
+        "executedAt": "2026-11-02T07:46:54.091Z"
       },
-      "status": "unavailable"
+      "status": "observed"
     },
     "daily_30d": {
-      "rows": [],
+      "rows": [
+        {
+          "date": "2026-11-02",
+          "screenPageViews": 1
+        }
+      ],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "No GA4 data is substituted. Page views are not verified human visitors. API access is unavailable until a separately authorized team token exists.",
-        "executedAt": null
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-02",
+        "executedAt": "2026-11-02T07:46:54.091Z"
       },
-      "status": "unavailable"
+      "status": "observed"
     },
     "pages_30d": {
       "rows": [],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "No GA4 data is substituted. Page views are not verified human visitors. API access is unavailable until a separately authorized team token exists.",
-        "executedAt": null
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-02",
+        "executedAt": "2026-11-02T07:46:54.091Z"
       },
-      "status": "unavailable"
+      "status": "observed"
     },
     "channels_30d": {
       "rows": [],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "No GA4 data is substituted. Page views are not verified human visitors. API access is unavailable until a separately authorized team token exists.",
-        "executedAt": null
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-02",
+        "executedAt": "2026-11-02T07:46:54.091Z"
       },
-      "status": "unavailable"
+      "status": "observed"
     },
     "summary_7d": {
-      "rows": [],
+      "rows": [
+        {
+          "screenPageViews": 1,
+          "totalUsers": null,
+          "averageEngagementPerSession": null
+        }
+      ],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "No GA4 data is substituted. Page views are not verified human visitors. API access is unavailable until a separately authorized team token exists.",
-        "executedAt": null
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-02",
+        "executedAt": "2026-11-02T07:46:54.091Z"
       },
-      "status": "unavailable"
+      "status": "observed"
     },
     "daily_7d": {
-      "rows": [],
+      "rows": [
+        {
+          "date": "2026-11-02",
+          "screenPageViews": 1
+        }
+      ],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "No GA4 data is substituted. Page views are not verified human visitors. API access is unavailable until a separately authorized team token exists.",
-        "executedAt": null
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-02",
+        "executedAt": "2026-11-02T07:46:54.091Z"
       },
-      "status": "unavailable"
+      "status": "observed"
     },
     "pages_7d": {
       "rows": [],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "No GA4 data is substituted. Page views are not verified human visitors. API access is unavailable until a separately authorized team token exists.",
-        "executedAt": null
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-02",
+        "executedAt": "2026-11-02T07:46:54.091Z"
       },
-      "status": "unavailable"
+      "status": "observed"
     },
     "channels_7d": {
       "rows": [],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "No GA4 data is substituted. Page views are not verified human visitors. API access is unavailable until a separately authorized team token exists.",
-        "executedAt": null
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-02",
+        "executedAt": "2026-11-02T07:46:54.091Z"
       },
-      "status": "unavailable"
+      "status": "observed"
     },
     "summary_yesterday": {
       "rows": [],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "No GA4 data is substituted. Page views are not verified human visitors. API access is unavailable until a separately authorized team token exists.",
+        "description": "Selected period predates cookieless activation; historical counts are unavailable, not zero.",
         "executedAt": null
       },
-      "status": "unavailable"
+      "status": "outside-coverage"
     },
     "daily_yesterday": {
       "rows": [],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "No GA4 data is substituted. Page views are not verified human visitors. API access is unavailable until a separately authorized team token exists.",
+        "description": "Selected period predates cookieless activation; historical counts are unavailable, not zero.",
         "executedAt": null
       },
-      "status": "unavailable"
+      "status": "outside-coverage"
     },
     "pages_yesterday": {
       "rows": [],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "No GA4 data is substituted. Page views are not verified human visitors. API access is unavailable until a separately authorized team token exists.",
+        "description": "Selected period predates cookieless activation; historical counts are unavailable, not zero.",
         "executedAt": null
       },
-      "status": "unavailable"
+      "status": "outside-coverage"
     },
     "channels_yesterday": {
       "rows": [],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "No GA4 data is substituted. Page views are not verified human visitors. API access is unavailable until a separately authorized team token exists.",
+        "description": "Selected period predates cookieless activation; historical counts are unavailable, not zero.",
         "executedAt": null
       },
-      "status": "unavailable"
+      "status": "outside-coverage"
     }
   },
   "id": "dashboard:bda955d9-bb21-490e-be0b-79bcf204bcda",

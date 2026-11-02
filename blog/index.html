@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#ffffff">
-<meta name="data-app-snapshot-sha256" content="9a5fb5f808c1c49bc1b999761f32a198833f6f8adb04e6fc24a17bdbd6d16636">
+<meta name="data-app-snapshot-sha256" content="44bf1f04dad0b93ded0310b08443a307101580944e4232c8d0d7ede2cd25ec19">
 <meta name="data-app-runtime-sha256" content="b1771584910da746d0cf1b967a4889fee226053d841596104b457a04a2dd3d91">
 <meta name="data-app-bootstrap" content="deferred-content-v1">
 <meta name="data-app-build-layout" content="separate-data-v1">
-<meta name="data-app-local-snapshot" content="snapshot.9a5fb5f808c1c49bc1b999761f32a198833f6f8adb04e6fc24a17bdbd6d16636.json">
+<meta name="data-app-local-snapshot" content="snapshot.44bf1f04dad0b93ded0310b08443a307101580944e4232c8d0d7ede2cd25ec19.json">
 <meta name="data-app-local-thread" content="01a0bdd3-f1a3-7913-9334-dcfb360528e8">
 <title>Robotail 博客访问看板</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIuMDMxMjUgOUMyLjAzMTI1IDcuODk1NDMgMi45MjY2OCA3IDQuMDMxMjUgN0g4LjY1NDNWMjEuOTAwNEg0LjAzMTI1QzIuOTI2NjggMjEuOTAwNCAyLjAzMTI1IDIxLjAwNSAyLjAzMTI1IDE5LjkwMDRWOVoiIGZpbGw9IiMwMjg1RkYiLz4KPHBhdGggZD0iTTguNjU0MyA0LjA5OTYxQzguNjU0MyAyLjk5NTA0IDkuNTQ5NzMgMi4wOTk2MSAxMC42NTQzIDIuMDk5NjFIMTMuMjc3M0MxNC4zODE5IDIuMDk5NjEgMTUuMjc3MyAyLjk5NTA0IDE1LjI3NzMgNC4wOTk2MVYyMS45MDA0SDguNjU0M1Y0LjA5OTYxWiIgZmlsbD0iIzAyODVGRiIgZmlsbC1vcGFjaXR5PSIwLjciLz4KPHBhdGggZD0iTTE1LjI3NzMgMTEuMDk5NkgxOS45MDA0QzIxLjAwNSAxMS4wOTk2IDIxLjkwMDQgMTEuOTk1IDIxLjkwMDQgMTMuMDk5NlYxOS45MDA0QzIxLjkwMDQgMjEuMDA1IDIxLjAwNSAyMS45MDA0IDE5LjkwMDQgMjEuOTAwNEgxNS4yNzczVjExLjA5OTZaIiBmaWxsPSIjMDI4NUZGIiBmaWxsLW9wYWNpdHk9IjAuNCIvPgo8L3N2Zz4K">
@@ -66,7 +66,7 @@ function CookielessDashboard({snapshot,period,setPeriod}){
  , jsxRuntime.jsx('nav', { className: "blog-periods", 'aria-label': "统计时间范围", children: [['all','接入以来'],['30d','近 30 天'],['7d','近 7 天'],['yesterday','昨天']].map(([id,label])=>jsxRuntime.jsx('button', { 'aria-pressed': period===id, onClick: ()=>setPeriod(id), children: label}, id))})
  , jsxRuntime.jsxs('div', { className: "blog-notice", role: "status", children: [jsxRuntime.jsx('strong', { children: "改为直接浏览计数，不再弹出同意统计提示"}), jsxRuntime.jsx('p', { children: "2026 年 11 月 2 日切换至 Vercel Web Analytics。新读者无需点同意；自身排除、主动退出和浏览器隐私信号仍然生效。旧 GA4 的同意后统计不混入本次数据。"          }), jsxRuntime.jsx('p', { children: snapshot.status==='awaiting-report-access'?'采集服务已启用；统一看板自动读取报表仍等待授权，因此下方不是零访问，也不使用演示数据。':'以下是官方统计 API 返回的页面浏览量。'}), jsxRuntime.jsx('a', { href: "https://vercel.com/robotail/auto-blog-system/analytics", target: "_blank", rel: "noopener noreferrer" , children: "查看 Vercel 实时统计（需登录）↗"  })]})
  , jsxRuntime.jsxs(dataApp.Section, { id: "pv-metrics", columns: 3, spacing: "metrics", children: [
- jsxRuntime.jsx(dataApp.MetricCard, { id: "pv-count", queryId: q, title: "页面浏览量 PV" , value: Number.isFinite(pv)?pv.toLocaleString('zh-CN'):'等待报表授权', displayRows: rows, description: "一次页面浏览计一次；刷新或重复打开可再次计数。",})
+ jsxRuntime.jsx(dataApp.MetricCard, { id: "pv-count", queryId: q, title: "页面浏览量 PV" , value: Number.isFinite(pv)?pv.toLocaleString('zh-CN'):snapshot.status==='awaiting-report-access'?'等待报表授权':'接入前未采集', displayRows: rows, description: "一次页面浏览计一次；刷新或重复打开可再次计数。",})
  , jsxRuntime.jsx(dataApp.MetricCard, { id: "pv-human", queryId: q, title: "是否有外部真人读者", value: "尚不能确认", displayRows: rows, description: "浏览量不是去重人数，也不是已核实的真人数。",})
  , jsxRuntime.jsx(dataApp.MetricCard, { id: "pv-time", queryId: q, title: "停留时长", value: "本方案不提供", displayRows: rows, description: "本次以浏览量为主，不把旧 GA4 的停留数据拼接进来。"  ,})
  ]})
@@ -74,7 +74,7 @@ function CookielessDashboard({snapshot,period,setPeriod}){
  , jsxRuntime.jsxs(dataApp.Section, { id: "pv-details", columns: 2, spacing: "content", children: [
  jsxRuntime.jsx(dataApp.DataComponent, { id: "pv-pages", queryId: 'pages_'+period, title: "文章与页面", kind: "table", variant: "card", displayRows: pages, children: pages.length?jsxRuntime.jsx(dataApp.DataTable, { caption: "页面浏览量", rows: pages, columns: [{field:'pagePath',label:'页面'},{field:'screenPageViews',label:'浏览量'}],}):jsxRuntime.jsx('div', { className: "blog-empty small" , children: "等待页面报表"})})
  , jsxRuntime.jsx(dataApp.DataComponent, { id: "pv-referrers", queryId: 'channels_'+period, title: "访问来源", kind: "table", variant: "card", displayRows: channels, children: channels.length?jsxRuntime.jsx(dataApp.DataTable, { caption: "来源浏览量", rows: channels, columns: [{field:'sessionDefaultChannelGroup',label:'来源'},{field:'screenPageViews',label:'浏览量'}],}):jsxRuntime.jsx('div', { className: "blog-empty small" , children: "等待来源报表"})})
- ]}), jsxRuntime.jsxs('section', { className: "blog-method", children: [jsxRuntime.jsx('p', { children: "Vercel 免费方案可查看 30 天历史、每月最多 50,000 个事件；本次没有升级套餐。浏览器拦截、隐私信号、流量上限或内部排除均可能造成漏计，不能承诺每一次请求都计入。统计不使用 Cookie，但 Vercel 会处理请求信息并生成短期哈希；不是完全不处理访问信息。"        }), jsxRuntime.jsxs('p', { children: ["统一页面显示已发布快照。管理用 Chrome 已设置排除，其他设备请在"  , jsxRuntime.jsx('a', { href: "https://auto-blog-system-omega.vercel.app/analytics-settings/", target: "_blank", rel: "noopener noreferrer" , children: "统计设置"}), "中分别处理。", jsxRuntime.jsx('a', { href: "https://vercel.com/docs/analytics/privacy-policy", target: "_blank", rel: "noopener noreferrer" , children: "数据处理说明"})]})]})
+ ]}), jsxRuntime.jsxs('section', { className: "blog-method", children: [jsxRuntime.jsx('p', { children: "实际统计覆盖从 2026 年 11 月 2 日切换后开始，含当前 UTC 日期的不完整数据；选择较长范围也不会补齐接入前的历史。当前浏览量包含已知的安装验证访问，不代表真实外部读者。"        }), jsxRuntime.jsx('p', { children: "Vercel 免费方案可查看 30 天历史、每月最多 50,000 个事件；本次没有升级套餐。浏览器拦截、隐私信号、流量上限或内部排除均可能造成漏计。统计不使用 Cookie，但 Vercel 会处理请求信息并生成短期哈希。"        }), jsxRuntime.jsxs('p', { children: ["统一页面显示已发布快照。管理用 Chrome 已设置排除，其他设备请在"  , jsxRuntime.jsx('a', { href: "https://auto-blog-system-omega.vercel.app/analytics-settings/", target: "_blank", rel: "noopener noreferrer" , children: "统计设置"}), "中分别处理。", jsxRuntime.jsx('a', { href: "https://vercel.com/docs/analytics/privacy-policy", target: "_blank", rel: "noopener noreferrer" , children: "数据处理说明"})]})]})
  ]});
 }
 
