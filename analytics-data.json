@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "realData": true,
-  "generatedAt": "2026-11-12T00:57:38.560Z",
+  "generatedAt": "2026-11-13T00:59:31.905Z",
   "shopInfo": {
     "name": "Robotail",
     "domain": "robotailpets.com",
@@ -9,33 +9,32 @@
     "timezone": "America/Chicago"
   },
   "period": {
-    "start": "2026-10-13T00:57:25.305Z",
-    "end": "2026-11-12T00:57:25.305Z",
+    "start": "2026-10-14T00:59:18.403Z",
+    "end": "2026-11-13T00:59:18.403Z",
     "timezone": "America/Chicago",
     "label": "最近30天滚动窗口"
   },
   "comparison": {
-    "start": "2026-09-13T00:57:25.305Z",
-    "end": "2026-10-13T00:57:25.305Z",
+    "start": "2026-09-14T00:59:18.403Z",
+    "end": "2026-10-14T00:59:18.403Z",
     "complete": false,
     "reason": "未授予 read_all_orders，前30天基线可能受60天历史权限边界影响，暂不显示环比",
     "summary": null
   },
   "analytics": {
     "summary": {
-      "totalOrders": 72,
-      "validOrders": 72,
+      "totalOrders": 73,
+      "validOrders": 73,
       "cancelledOrders": 0,
-      "orderAmount": 4824.84,
-      "averageOrderValue": 67.01,
-      "paidOrders": 72,
-      "fulfilledOrders": 68,
+      "orderAmount": 4942.89,
+      "averageOrderValue": 67.71,
+      "paidOrders": 73,
+      "fulfilledOrders": 69,
       "unfulfilledOrders": 4,
-      "fulfillmentRate": 94.44
+      "fulfillmentRate": 94.52
     },
     "trends": {
       "dates": [
-        "2026-10-12",
         "2026-10-13",
         "2026-10-14",
         "2026-10-15",
@@ -65,10 +64,10 @@
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "orders": [
-        1,
         0,
         1,
         1,
@@ -98,10 +97,10 @@
         4,
         2,
         0,
-        3
+        4,
+        1
       ],
       "amount": [
-        36.99,
         0,
         19.73,
         286.13,
@@ -131,14 +130,15 @@
         234.54,
         122.35,
         0,
-        123.96
+        235.92,
+        43.08
       ]
     },
     "topProducts": [
       {
         "name": "EZSKUUP Non-Stick Cassava Cat Litter (9lb) - Robotail Compatible",
-        "quantity": 23,
-        "amount": 866.27
+        "quantity": 24,
+        "amount": 903.26
       },
       {
         "name": "UBPet C20 Litter Box Anti-Slip Stabilizing Base",
@@ -147,13 +147,13 @@
       },
       {
         "name": "60-Pack Cat Litter Bags for Robotail C32/C42 Automatic Litter Boxes",
-        "quantity": 13,
-        "amount": 282.99
+        "quantity": 14,
+        "amount": 302.98
       },
       {
         "name": "Robotail Litter Box Deodorizer Blocks",
-        "quantity": 8,
-        "amount": 195.54
+        "quantity": 9,
+        "amount": 215.53
       },
       {
         "name": "UBPet Robotail F20 Automatic Smart Pet Feeder for Cats & Dogs",
@@ -161,14 +161,14 @@
         "amount": 1290.67
       },
       {
+        "name": "C42 Robotail Smart Cat Litter Box Small Hole Filter Accessory",
+        "quantity": 7,
+        "amount": 137.15
+      },
+      {
         "name": "Robotail F20 Automatic Wet Cat Feeder Silicone Food Tray",
         "quantity": 5,
         "amount": 150.57
-      },
-      {
-        "name": "C42 Robotail Smart Cat Litter Box Small Hole Filter Accessory",
-        "quantity": 5,
-        "amount": 99.17
       },
       {
         "name": "UBPet Non-Stick Tofu Cat Litter for Robotail C42 Auto Box",
@@ -189,36 +189,81 @@
   },
   "periodAnalytics": {
     "today": {
+      "startDate": "2026-11-12",
+      "endDate": "2026-11-12",
+      "analytics": {
+        "summary": {
+          "totalOrders": 1,
+          "validOrders": 1,
+          "cancelledOrders": 0,
+          "orderAmount": 43.08,
+          "averageOrderValue": 43.08,
+          "paidOrders": 1,
+          "fulfilledOrders": 0,
+          "unfulfilledOrders": 1,
+          "fulfillmentRate": 0
+        },
+        "trends": {
+          "dates": [
+            "2026-11-12"
+          ],
+          "orders": [
+            1
+          ],
+          "amount": [
+            43.08
+          ]
+        },
+        "topProducts": [
+          {
+            "name": "60-Pack Cat Litter Bags for Robotail C32/C42 Automatic Litter Boxes",
+            "quantity": 1,
+            "amount": 19.99
+          },
+          {
+            "name": "Robotail Litter Box Deodorizer Blocks",
+            "quantity": 1,
+            "amount": 19.99
+          }
+        ]
+      }
+    },
+    "yesterday": {
       "startDate": "2026-11-11",
       "endDate": "2026-11-11",
       "analytics": {
         "summary": {
-          "totalOrders": 3,
-          "validOrders": 3,
+          "totalOrders": 4,
+          "validOrders": 4,
           "cancelledOrders": 0,
-          "orderAmount": 123.96,
-          "averageOrderValue": 41.32,
-          "paidOrders": 3,
-          "fulfilledOrders": 0,
-          "unfulfilledOrders": 3,
-          "fulfillmentRate": 0
+          "orderAmount": 235.92,
+          "averageOrderValue": 58.98,
+          "paidOrders": 4,
+          "fulfilledOrders": 2,
+          "unfulfilledOrders": 2,
+          "fulfillmentRate": 50
         },
         "trends": {
           "dates": [
             "2026-11-11"
           ],
           "orders": [
-            3
+            4
           ],
           "amount": [
-            123.96
+            235.92
           ]
         },
         "topProducts": [
           {
             "name": "EZSKUUP Non-Stick Cassava Cat Litter (9lb) - Robotail Compatible",
+            "quantity": 4,
+            "amount": 147.96
+          },
+          {
+            "name": "C42 Robotail Smart Cat Litter Box Small Hole Filter Accessory",
             "quantity": 2,
-            "amount": 73.98
+            "amount": 37.98
           },
           {
             "name": "60-Pack Cat Litter Bags for Robotail C32/C42 Automatic Litter Boxes",
@@ -233,84 +278,55 @@
         ]
       }
     },
-    "yesterday": {
-      "startDate": "2026-11-10",
-      "endDate": "2026-11-10",
-      "analytics": {
-        "summary": {
-          "totalOrders": 0,
-          "validOrders": 0,
-          "cancelledOrders": 0,
-          "orderAmount": 0,
-          "averageOrderValue": null,
-          "paidOrders": 0,
-          "fulfilledOrders": 0,
-          "unfulfilledOrders": 0,
-          "fulfillmentRate": null
-        },
-        "trends": {
-          "dates": [
-            "2026-11-10"
-          ],
-          "orders": [
-            0
-          ],
-          "amount": [
-            0
-          ]
-        },
-        "topProducts": []
-      }
-    },
     "week": {
-      "startDate": "2026-11-05",
-      "endDate": "2026-11-11",
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-12",
       "analytics": {
         "summary": {
-          "totalOrders": 17,
-          "validOrders": 17,
+          "totalOrders": 15,
+          "validOrders": 15,
           "cancelledOrders": 0,
-          "orderAmount": 1054.55,
-          "averageOrderValue": 62.03,
-          "paidOrders": 17,
-          "fulfilledOrders": 13,
+          "orderAmount": 1015.69,
+          "averageOrderValue": 67.71,
+          "paidOrders": 15,
+          "fulfilledOrders": 11,
           "unfulfilledOrders": 4,
-          "fulfillmentRate": 76.47
+          "fulfillmentRate": 73.33
         },
         "trends": {
           "dates": [
-            "2026-11-05",
             "2026-11-06",
             "2026-11-07",
             "2026-11-08",
             "2026-11-09",
             "2026-11-10",
-            "2026-11-11"
+            "2026-11-11",
+            "2026-11-12"
           ],
           "orders": [
-            4,
             3,
             1,
             4,
             2,
             0,
-            3
+            4,
+            1
           ],
           "amount": [
-            193.9,
             229.81,
             149.99,
             234.54,
             122.35,
             0,
-            123.96
+            235.92,
+            43.08
           ]
         },
         "topProducts": [
           {
             "name": "UBPet C20 Litter Box Anti-Slip Stabilizing Base",
-            "quantity": 10,
-            "amount": 179.81
+            "quantity": 8,
+            "amount": 143.83
           },
           {
             "name": "EZSKUUP Non-Stick Cassava Cat Litter (9lb) - Robotail Compatible",
@@ -323,14 +339,19 @@
             "amount": 79.96
           },
           {
-            "name": "Robotail Litter Box Deodorizer Blocks",
-            "quantity": 4,
-            "amount": 119.96
-          },
-          {
             "name": "Robotail F20 Automatic Wet Cat Feeder Silicone Food Tray",
             "quantity": 4,
             "amount": 120.58
+          },
+          {
+            "name": "Robotail Litter Box Deodorizer Blocks",
+            "quantity": 3,
+            "amount": 79.97
+          },
+          {
+            "name": "C42 Robotail Smart Cat Litter Box Small Hole Filter Accessory",
+            "quantity": 2,
+            "amount": 37.98
           },
           {
             "name": "UBPet Robotail F20 Automatic Smart Pet Feeder for Cats & Dogs",
@@ -346,23 +367,22 @@
       }
     },
     "month": {
-      "startDate": "2026-10-12",
-      "endDate": "2026-11-11",
+      "startDate": "2026-10-13",
+      "endDate": "2026-11-12",
       "analytics": {
         "summary": {
-          "totalOrders": 72,
-          "validOrders": 72,
+          "totalOrders": 73,
+          "validOrders": 73,
           "cancelledOrders": 0,
-          "orderAmount": 4824.84,
-          "averageOrderValue": 67.01,
-          "paidOrders": 72,
-          "fulfilledOrders": 68,
+          "orderAmount": 4942.89,
+          "averageOrderValue": 67.71,
+          "paidOrders": 73,
+          "fulfilledOrders": 69,
           "unfulfilledOrders": 4,
-          "fulfillmentRate": 94.44
+          "fulfillmentRate": 94.52
         },
         "trends": {
           "dates": [
-            "2026-10-12",
             "2026-10-13",
             "2026-10-14",
             "2026-10-15",
@@ -392,10 +412,10 @@
             "2026-11-08",
             "2026-11-09",
             "2026-11-10",
-            "2026-11-11"
+            "2026-11-11",
+            "2026-11-12"
           ],
           "orders": [
-            1,
             0,
             1,
             1,
@@ -425,10 +445,10 @@
             4,
             2,
             0,
-            3
+            4,
+            1
           ],
           "amount": [
-            36.99,
             0,
             19.73,
             286.13,
@@ -458,14 +478,15 @@
             234.54,
             122.35,
             0,
-            123.96
+            235.92,
+            43.08
           ]
         },
         "topProducts": [
           {
             "name": "EZSKUUP Non-Stick Cassava Cat Litter (9lb) - Robotail Compatible",
-            "quantity": 23,
-            "amount": 866.27
+            "quantity": 24,
+            "amount": 903.26
           },
           {
             "name": "UBPet C20 Litter Box Anti-Slip Stabilizing Base",
@@ -474,13 +495,13 @@
           },
           {
             "name": "60-Pack Cat Litter Bags for Robotail C32/C42 Automatic Litter Boxes",
-            "quantity": 13,
-            "amount": 282.99
+            "quantity": 14,
+            "amount": 302.98
           },
           {
             "name": "Robotail Litter Box Deodorizer Blocks",
-            "quantity": 8,
-            "amount": 195.54
+            "quantity": 9,
+            "amount": 215.53
           },
           {
             "name": "UBPet Robotail F20 Automatic Smart Pet Feeder for Cats & Dogs",
@@ -488,14 +509,14 @@
             "amount": 1290.67
           },
           {
+            "name": "C42 Robotail Smart Cat Litter Box Small Hole Filter Accessory",
+            "quantity": 7,
+            "amount": 137.15
+          },
+          {
             "name": "Robotail F20 Automatic Wet Cat Feeder Silicone Food Tray",
             "quantity": 5,
             "amount": 150.57
-          },
-          {
-            "name": "C42 Robotail Smart Cat Litter Box Small Hole Filter Accessory",
-            "quantity": 5,
-            "amount": 99.17
           },
           {
             "name": "UBPet Non-Stick Tofu Cat Litter for Robotail C42 Auto Box",
@@ -523,19 +544,19 @@
   "traffic": {
     "status": "connected",
     "source": "GA4 Data API · 全渠道",
-    "executedAt": "2026-11-12T00:57:38.559Z",
+    "executedAt": "2026-11-13T00:59:31.904Z",
     "period": {
-      "start": "2026-10-12",
-      "end": "2026-11-10",
+      "start": "2026-10-13",
+      "end": "2026-11-11",
       "timezone": "America/Chicago"
     },
     "summary": {
-      "sessions": 2782,
-      "totalUsers": 1886,
-      "ecommercePurchases": 56,
-      "addToCarts": 176,
-      "checkouts": 93,
-      "purchaseSessionRate": 1.9769949676491732
+      "sessions": 2904,
+      "totalUsers": 1951,
+      "ecommercePurchases": 59,
+      "addToCarts": 178,
+      "checkouts": 94,
+      "purchaseSessionRate": 1.997245179063361
     },
     "rateReason": null,
     "daily": [
@@ -770,61 +791,69 @@
         "ecommercePurchases": 0,
         "addToCarts": 4,
         "checkouts": 3
+      },
+      {
+        "date": "2026-11-11",
+        "sessions": 90,
+        "totalUsers": 76,
+        "ecommercePurchases": 3,
+        "addToCarts": 2,
+        "checkouts": 1
       }
     ],
     "channels": [
       {
         "channel": "Direct",
-        "sessions": 1348,
-        "totalUsers": 983,
+        "sessions": 1406,
+        "totalUsers": 1027,
         "ecommercePurchases": 12,
         "addToCarts": 50,
         "checkouts": 37
       },
       {
         "channel": "Organic Search",
-        "sessions": 1206,
-        "totalUsers": 780,
-        "ecommercePurchases": 37,
-        "addToCarts": 84,
-        "checkouts": 49
+        "sessions": 1225,
+        "totalUsers": 793,
+        "ecommercePurchases": 40,
+        "addToCarts": 86,
+        "checkouts": 50
       },
       {
         "channel": "Paid Search",
-        "sessions": 57,
-        "totalUsers": 47,
+        "sessions": 58,
+        "totalUsers": 48,
         "ecommercePurchases": 0,
         "addToCarts": 0,
         "checkouts": 0
       },
       {
         "channel": "AI Assistant",
-        "sessions": 42,
-        "totalUsers": 39,
+        "sessions": 45,
+        "totalUsers": 42,
         "ecommercePurchases": 1,
         "addToCarts": 11,
         "checkouts": 7
       },
       {
         "channel": "Organic Shopping",
-        "sessions": 36,
-        "totalUsers": 25,
+        "sessions": 38,
+        "totalUsers": 26,
         "ecommercePurchases": 0,
         "addToCarts": 5,
         "checkouts": 0
       },
       {
         "channel": "Referral",
-        "sessions": 36,
-        "totalUsers": 27,
+        "sessions": 37,
+        "totalUsers": 28,
         "ecommercePurchases": 5,
         "addToCarts": 26,
         "checkouts": 0
       },
       {
         "channel": "Unassigned",
-        "sessions": 25,
-        "totalUsers": 25,
+        "sessions": 31,
+        "totalUsers": 31,
         "ecommercePurchases": 1,
         "addToCarts": 0,
         "checkouts": 0
@@ -852,27 +881,35 @@
         "ecommercePurchases": 0,
         "addToCarts": 0,
         "checkouts": 0
+      },
+      {
+        "channel": "Cross-network",
+        "sessions": 5,
+        "totalUsers": 5,
+        "ecommercePurchases": 0,
+        "addToCarts": 0,
+        "checkouts": 0
       }
     ],
     "firstReturnedDate": "2026-10-13",
     "reconciliation": {
-      "totalSessions": 2782,
-      "dailySessions": 2786,
-      "channelSessions": 2780
+      "totalSessions": 2904,
+      "dailySessions": 2876,
+      "channelSessions": 2875
     },
     "metadata": {
       "currencyCode": "USD",
       "timeZone": "America/Chicago"
     },
-    "note": "GA4 按属性时区统计最近30个完整自然日。返回数据未覆盖完整30天；此前日期缺少可用历史。加购、结账和购买为事件次数，不是去重人数漏斗；GA4购买次数不等同Shopify订单数。"
+    "note": "GA4 按属性时区统计最近30个完整自然日。加购、结账和购买为事件次数，不是去重人数漏斗；GA4购买次数不等同Shopify订单数。"
   },
   "provenance": {
     "shopify": {
       "source": "Shopify Admin REST API 2026-07",
-      "executedAt": "2026-11-12T00:57:38.560Z",
+      "executedAt": "2026-11-13T00:59:31.905Z",
       "pagesFetched": 3,
       "paginationComplete": true,
-      "fetchedOrders": 164,
+      "fetchedOrders": 162,
       "testOrdersExcluded": true
     },
     "definitions": {
