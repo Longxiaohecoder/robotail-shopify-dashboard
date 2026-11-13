@@ -2,7 +2,7 @@
   "title": "Robotail 博客访问看板",
   "surface": "dashboard",
   "buildStatus": "complete",
-  "generatedAt": "2026-11-12T00:57:39.412Z",
+  "generatedAt": "2026-11-13T04:27:32.755Z",
   "status": "observed",
   "host": "auto-blog-system-omega.vercel.app",
   "timezone": "UTC",
@@ -24,7 +24,7 @@
     "summary_all": {
       "rows": [
         {
-          "screenPageViews": 12,
+          "screenPageViews": 15,
           "totalUsers": null,
           "averageEngagementPerSession": null
         }
@@ -32,8 +32,8 @@
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-12T00:57:39.412Z",
-        "executedAt": "2026-11-12T00:57:39.412Z"
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-13T04:27:32.755Z",
+        "executedAt": "2026-11-13T04:27:32.755Z"
       },
       "status": "observed"
     },
@@ -81,14 +81,18 @@
         },
         {
           "date": "2026-11-12",
+          "screenPageViews": 3
+        },
+        {
+          "date": "2026-11-13",
           "screenPageViews": 0
         }
       ],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-12T00:57:39.412Z",
-        "executedAt": "2026-11-12T00:57:39.412Z"
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-13T04:27:32.755Z",
+        "executedAt": "2026-11-13T04:27:32.755Z"
       },
       "status": "observed"
     },
@@ -96,14 +100,14 @@
       "rows": [
         {
           "pagePath": "/",
-          "screenPageViews": 12
+          "screenPageViews": 15
         }
       ],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-12T00:57:39.412Z",
-        "executedAt": "2026-11-12T00:57:39.412Z"
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-13T04:27:32.755Z",
+        "executedAt": "2026-11-13T04:27:32.755Z"
       },
       "status": "observed"
     },
@@ -111,25 +115,25 @@
       "rows": [
         {
           "sessionDefaultChannelGroup": "robotailpets.com",
-          "screenPageViews": 6
+          "screenPageViews": 7
         },
         {
           "sessionDefaultChannelGroup": "Direct / unknown",
-          "screenPageViews": 6
+          "screenPageViews": 8
         }
       ],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-12T00:57:39.412Z",
-        "executedAt": "2026-11-12T00:57:39.412Z"
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-13T04:27:32.755Z",
+        "executedAt": "2026-11-13T04:27:32.755Z"
       },
       "status": "observed"
     },
     "summary_30d": {
       "rows": [
         {
-          "screenPageViews": 12,
+          "screenPageViews": 15,
           "totalUsers": null,
           "averageEngagementPerSession": null
         }
@@ -137,8 +141,8 @@
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-12T00:57:39.412Z",
-        "executedAt": "2026-11-12T00:57:39.412Z"
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-13T04:27:32.755Z",
+        "executedAt": "2026-11-13T04:27:32.755Z"
       },
       "status": "observed"
     },
@@ -186,14 +190,18 @@
         },
         {
           "date": "2026-11-12",
+          "screenPageViews": 3
+        },
+        {
+          "date": "2026-11-13",
           "screenPageViews": 0
         }
       ],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-12T00:57:39.412Z",
-        "executedAt": "2026-11-12T00:57:39.412Z"
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-13T04:27:32.755Z",
+        "executedAt": "2026-11-13T04:27:32.755Z"
       },
       "status": "observed"
     },
@@ -201,14 +209,14 @@
       "rows": [
         {
           "pagePath": "/",
-          "screenPageViews": 12
+          "screenPageViews": 15
         }
       ],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-12T00:57:39.412Z",
-        "executedAt": "2026-11-12T00:57:39.412Z"
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-13T04:27:32.755Z",
+        "executedAt": "2026-11-13T04:27:32.755Z"
       },
       "status": "observed"
     },
@@ -216,25 +224,25 @@
       "rows": [
         {
           "sessionDefaultChannelGroup": "robotailpets.com",
-          "screenPageViews": 6
+          "screenPageViews": 7
         },
         {
           "sessionDefaultChannelGroup": "Direct / unknown",
-          "screenPageViews": 6
+          "screenPageViews": 8
         }
       ],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-12T00:57:39.412Z",
-        "executedAt": "2026-11-12T00:57:39.412Z"
+        "description": "Vercel official API; UTC period 2026-11-02 — 2026-11-13T04:27:32.755Z",
+        "executedAt": "2026-11-13T04:27:32.755Z"
       },
       "status": "observed"
     },
     "summary_7d": {
       "rows": [
         {
-          "screenPageViews": 6,
+          "screenPageViews": 9,
           "totalUsers": null,
           "averageEngagementPerSession": null
         }
@@ -242,17 +250,13 @@
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "Vercel official API; UTC period 2026-11-06 — 2026-11-12T00:57:39.412Z",
-        "executedAt": "2026-11-12T00:57:39.412Z"
+        "description": "Vercel official API; UTC period 2026-11-07 — 2026-11-13T04:27:32.755Z",
+        "executedAt": "2026-11-13T04:27:32.755Z"
       },
       "status": "observed"
     },
     "daily_7d": {
       "rows": [
-        {
-          "date": "2026-11-06",
-          "screenPageViews": 0
-        },
         {
           "date": "2026-11-07",
           "screenPageViews": 0
@@ -275,14 +279,18 @@
         },
         {
           "date": "2026-11-12",
+          "screenPageViews": 3
+        },
+        {
+          "date": "2026-11-13",
           "screenPageViews": 0
         }
       ],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "Vercel official API; UTC period 2026-11-06 — 2026-11-12T00:57:39.412Z",
-        "executedAt": "2026-11-12T00:57:39.412Z"
+        "description": "Vercel official API; UTC period 2026-11-07 — 2026-11-13T04:27:32.755Z",
+        "executedAt": "2026-11-13T04:27:32.755Z"
       },
       "status": "observed"
     },
@@ -290,14 +298,14 @@
       "rows": [
         {
           "pagePath": "/",
-          "screenPageViews": 6
+          "screenPageViews": 9
         }
       ],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "Vercel official API; UTC period 2026-11-06 — 2026-11-12T00:57:39.412Z",
-        "executedAt": "2026-11-12T00:57:39.412Z"
+        "description": "Vercel official API; UTC period 2026-11-07 — 2026-11-13T04:27:32.755Z",
+        "executedAt": "2026-11-13T04:27:32.755Z"
       },
       "status": "observed"
     },
@@ -305,25 +313,25 @@
       "rows": [
         {
           "sessionDefaultChannelGroup": "robotailpets.com",
-          "screenPageViews": 4
+          "screenPageViews": 5
         },
         {
           "sessionDefaultChannelGroup": "Direct / unknown",
-          "screenPageViews": 2
+          "screenPageViews": 4
         }
       ],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "Vercel official API; UTC period 2026-11-06 — 2026-11-12T00:57:39.412Z",
-        "executedAt": "2026-11-12T00:57:39.412Z"
+        "description": "Vercel official API; UTC period 2026-11-07 — 2026-11-13T04:27:32.755Z",
+        "executedAt": "2026-11-13T04:27:32.755Z"
       },
       "status": "observed"
     },
     "summary_yesterday": {
       "rows": [
         {
-          "screenPageViews": 0,
+          "screenPageViews": 3,
           "totalUsers": null,
           "averageEngagementPerSession": null
         }
@@ -331,38 +339,57 @@
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "Vercel official API; UTC period 2026-11-11 — 2026-11-11T23:59:59.999Z",
-        "executedAt": "2026-11-12T00:57:39.412Z"
+        "description": "Vercel official API; UTC period 2026-11-12 — 2026-11-12T23:59:59.999Z",
+        "executedAt": "2026-11-13T04:27:32.755Z"
       },
       "status": "observed"
     },
     "daily_yesterday": {
-      "rows": [],
+      "rows": [
+        {
+          "date": "2026-11-12",
+          "screenPageViews": 3
+        }
+      ],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "Vercel official API; UTC period 2026-11-11 — 2026-11-11T23:59:59.999Z",
-        "executedAt": "2026-11-12T00:57:39.412Z"
+        "description": "Vercel official API; UTC period 2026-11-12 — 2026-11-12T23:59:59.999Z",
+        "executedAt": "2026-11-13T04:27:32.755Z"
       },
       "status": "observed"
     },
     "pages_yesterday": {
-      "rows": [],
+      "rows": [
+        {
+          "pagePath": "/",
+          "screenPageViews": 3
+        }
+      ],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "Vercel official API; UTC period 2026-11-11 — 2026-11-11T23:59:59.999Z",
-        "executedAt": "2026-11-12T00:57:39.412Z"
+        "description": "Vercel official API; UTC period 2026-11-12 — 2026-11-12T23:59:59.999Z",
+        "executedAt": "2026-11-13T04:27:32.755Z"
       },
       "status": "observed"
     },
     "channels_yesterday": {
-      "rows": [],
+      "rows": [
+        {
+          "sessionDefaultChannelGroup": "Direct / unknown",
+          "screenPageViews": 2
+        },
+        {
+          "sessionDefaultChannelGroup": "robotailpets.com",
+          "screenPageViews": 1
+        }
+      ],
       "source": {
         "name": "Vercel Web Analytics · cookieless page views",
         "url": "https://vercel.com/robotail/auto-blog-system/analytics",
-        "description": "Vercel official API; UTC period 2026-11-11 — 2026-11-11T23:59:59.999Z",
-        "executedAt": "2026-11-12T00:57:39.412Z"
+        "description": "Vercel official API; UTC period 2026-11-12 — 2026-11-12T23:59:59.999Z",
+        "executedAt": "2026-11-13T04:27:32.755Z"
       },
       "status": "observed"
     }
